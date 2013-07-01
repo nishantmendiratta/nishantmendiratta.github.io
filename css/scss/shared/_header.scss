@@ -4,15 +4,27 @@
 	.header{
 		@include zen-grid-item(8,3);
 				@include media($device_768) {
+
 				}
 				@include media($device_480) {
 				}
 		.title{
 			font-family:Lucida Console;
-
+			margin: 10px;
 			a{
 					font-size: em(24);
    			}
+   			@include media($device_480) {
+					@include zen-clear(both);
+					@include zen-grid-item(12,1);
+					font-size: em(20);
+
+				}
+				@include media($device_320) {
+					@include zen-clear(both);
+					@include zen-grid-item(12,1);
+					font-size: em(18);
+				}
 		}
 		.admin-pic{
 				background: url('../assets/admin.jpg') no-repeat;
@@ -24,14 +36,30 @@
 				border-radius: 86px 86px 86px 86px;
 				box-shadow: -8px 0px 6px #DCDCDC;
 				@include media($device_768) {
+					display: block;
 				}
 				@include media($device_480) {
+					display: block;
+					float: none;
+					margin: 10px;
+				}
+				@include media($device_320) {
+					display: block;
+					float: none;
+					margin: 10px;
 				}
 		}
-		.socail-sharing{
+		.social-sharing{
+			margin: 10px;
 				@include media($device_768) {
 				}
 				@include media($device_480) {
+					@include zen-clear(both);
+					@include zen-grid-item(12,1);
+				}
+				@include media($device_320) {
+					@include zen-clear(both);
+					@include zen-grid-item(12,1);
 				}
 		}
 	}

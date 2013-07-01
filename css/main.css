@@ -102,9 +102,40 @@ body {
     box-sizing: border-box;
     word-wrap: break-word; }
     .topWrapper .header .title {
-      font-family: Lucida Console; }
+      font-family: Lucida Console;
+      margin: 10px; }
       .topWrapper .header .title a {
         font-size: 1.5em; }
+      @media screen and (max-width: 480px) {
+        .topWrapper .header .title {
+          clear: both;
+          float: left;
+          width: 100%;
+          margin-left: 0%;
+          margin-right: -100%;
+          padding-left: 5px;
+          padding-right: 5px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          word-wrap: break-word;
+          font-size: 1.25em; } }
+      @media screen and (max-width: 320px) {
+        .topWrapper .header .title {
+          clear: both;
+          float: left;
+          width: 100%;
+          margin-left: 0%;
+          margin-right: -100%;
+          padding-left: 5px;
+          padding-right: 5px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          word-wrap: break-word;
+          font-size: 1.125em; } }
     .topWrapper .header .admin-pic {
       background: url("../assets/admin.jpg") no-repeat;
       position: center;
@@ -114,6 +145,49 @@ body {
       margin-right: 25px;
       border-radius: 86px 86px 86px 86px;
       box-shadow: -8px 0px 6px #DCDCDC; }
+      @media screen and (max-width: 786px) {
+        .topWrapper .header .admin-pic {
+          display: block; } }
+      @media screen and (max-width: 480px) {
+        .topWrapper .header .admin-pic {
+          display: block;
+          float: none;
+          margin: 10px; } }
+      @media screen and (max-width: 320px) {
+        .topWrapper .header .admin-pic {
+          display: block;
+          float: none;
+          margin: 10px; } }
+    .topWrapper .header .social-sharing {
+      margin: 10px; }
+      @media screen and (max-width: 480px) {
+        .topWrapper .header .social-sharing {
+          clear: both;
+          float: left;
+          width: 100%;
+          margin-left: 0%;
+          margin-right: -100%;
+          padding-left: 5px;
+          padding-right: 5px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          word-wrap: break-word; } }
+      @media screen and (max-width: 320px) {
+        .topWrapper .header .social-sharing {
+          clear: both;
+          float: left;
+          width: 100%;
+          margin-left: 0%;
+          margin-right: -100%;
+          padding-left: 5px;
+          padding-right: 5px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          word-wrap: break-word; } }
 
 .bottomWrapper {
   margin-top: 5px;
@@ -141,8 +215,37 @@ body {
     .bottomWrapper footer .gitSource {
       background: url("../assets/github_icon.png") no-repeat;
       padding-left: 20px;
+      height: 25px;
       color: red; }
 
+@media screen and (max-width: 480px) {
+  .topWrapper nav ul {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word; } }
+@media screen and (max-width: 320px) {
+  .topWrapper nav ul {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word; } }
 .topWrapper nav ul li {
   display: inline-block;
   margin-right: 10px;
@@ -153,6 +256,14 @@ body {
   box-shadow: 5px 5px #76c1d3; }
   .topWrapper nav ul li a {
     color: #444444; }
+  @media screen and (max-width: 480px) {
+    .topWrapper nav ul li {
+      margin: 10;
+      display: block; } }
+  @media screen and (max-width: 320px) {
+    .topWrapper nav ul li {
+      margin: 10px;
+      display: block; } }
 
 /*
 *
