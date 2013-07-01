@@ -1,0 +1,21 @@
+.bottomWrapper{
+@include zen-grid-container;
+margin-top: 5px;
+text-align: center;
+font-size: em(12);
+	footer{
+	@include zen-grid-item(8,3);
+		span{
+			color: #0174DF;
+		}
+		.gitSource{
+			background: url('../assets/github_icon.png') no-repeat;
+			padding-left: 20px;
+			color: red;
+				@include media($device_768) {
+				}
+				@include media($device_480) {
+				}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.topWrapper{ 
+	@include zen-grid-container;
+	margin-top: 20px;
+	.header{
+		@include zen-grid-item(8,3);
+				@include media($device_768) {
+				}
+				@include media($device_480) {
+				}
+		.title{
+			font-family:Lucida Console;
+
+			a{
+					font-size: em(24);
+   			}
+		}
+		.admin-pic{
+				background: url('../assets/admin.jpg') no-repeat;
+				position: center;
+				height: 150px;
+				width: 145px;
+				float: left;
+				margin-right: 25px;
+				border-radius: 86px 86px 86px 86px;
+				box-shadow: -8px 0px 6px #DCDCDC;
+				@include media($device_768) {
+				}
+				@include media($device_480) {
+				}
+		}
+		.socail-sharing{
+				@include media($device_768) {
+				}
+				@include media($device_480) {
+				}
+		}
+	}
+}

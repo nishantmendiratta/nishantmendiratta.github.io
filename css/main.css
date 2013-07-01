@@ -1,15 +1,164 @@
-body{
-	background: #F1F1F1;
-	color: #444444;
-	margin-top: 25px;
-	margin-left: 200px;
-	font-family: cursive;
-}
+ /*
+* CSS3 Using Pre-Processor
+* Written, Compiled by your-name
+* Licensed for use at http://nishantmendiratta.github.io only
+*
+* http://nishantmendiratta.github.io
+* @NishantMendiratta
+*
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
+body {
+  background-color: #f1f1f1;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(100%, white));
+  background-image: -webkit-linear-gradient(to right, #f1f1f1, white);
+  background-image: -moz-linear-gradient(to right, #f1f1f1, white);
+  background-image: -ms-linear-gradient(to right, #f1f1f1, white);
+  background-image: -o-linear-gradient(to right, #f1f1f1, white);
+  background-image: linear-gradient(to right, #f1f1f1, white);
+  color: #444444;
+  margin: 0 auto;
+  font-family: Book Antiqua;
+  font-size: 0.875em; }
+  body a {
+    color: #000;
+    text-decoration: none; }
+  body span {
+    color: #000; }
 
-a{
-	color: #000;
-	text-decoration: none;
-}
+.wrapper:before, .wrapper:after {
+  content: "";
+  display: table; }
+.wrapper:after {
+  clear: both; }
+.wrapper .content {
+  float: left;
+  width: 66.66667%;
+  margin-left: 16.66667%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding: 20px;
+  font-size: 1em;
+  color: #a80000; }
 
+.designer, .coder {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background: #40908F;
+  padding: 10px;
+  color: #FFF;
+  margin-bottom: 15px;
+  border-radius: 2px 2px 2px 2px;
+  box-shadow: -6px 6px 1px #DCDCDC;
+  font-family: cursive; }
 
+.end-content {
+  clear: both; }
+
+.heart {
+  font-size: 1.375em;
+  color: red; }
+
+.footer-code {
+  color: #a80000; }
+
+.topWrapper {
+  margin-top: 20px; }
+  .topWrapper:before, .topWrapper:after {
+    content: "";
+    display: table; }
+  .topWrapper:after {
+    clear: both; }
+  .topWrapper .header {
+    float: left;
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word; }
+    .topWrapper .header .title {
+      font-family: Lucida Console; }
+      .topWrapper .header .title a {
+        font-size: 1.5em; }
+    .topWrapper .header .admin-pic {
+      background: url("../assets/admin.jpg") no-repeat;
+      position: center;
+      height: 150px;
+      width: 145px;
+      float: left;
+      margin-right: 25px;
+      border-radius: 86px 86px 86px 86px;
+      box-shadow: -8px 0px 6px #DCDCDC; }
+
+.bottomWrapper {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 0.75em; }
+  .bottomWrapper:before, .bottomWrapper:after {
+    content: "";
+    display: table; }
+  .bottomWrapper:after {
+    clear: both; }
+  .bottomWrapper footer {
+    float: left;
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word; }
+    .bottomWrapper footer span {
+      color: #0174DF; }
+    .bottomWrapper footer .gitSource {
+      background: url("../assets/github_icon.png") no-repeat;
+      padding-left: 20px;
+      color: red; }
+
+.topWrapper nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #F1F1F1;
+  border-radius: 0px 0px 0px 0px;
+  box-shadow: 5px 5px #76c1d3; }
+  .topWrapper nav ul li a {
+    color: #444444; }
+
+/*
+*
+* CSS3 Using Pre-Processor
+* Written, Compiled by Nishant Mendiratta
+* Licensed for use at http://nishantmendiratta.github.io only
+* 
+* http://nishantmendiratta.github.io
+*/
