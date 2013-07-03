@@ -2,8 +2,7 @@ body{
 @include linear-gradient(to right , #F1F1F1, #FFF);
 color: #444444;
 margin: 0 auto;
-font-family:Book Antiqua;
-font-size: em(14);
+font : 80%/1.5em "calluna", Georgia, serif;
 		a{
 			 color: #000;
 			 text-decoration: none;
@@ -37,6 +36,9 @@ font-size: em(14);
 
 .end-content{
 	@include zen-clear(both);
+	a{
+		color: #FF0000;
+	}
 }
 
 .heart{

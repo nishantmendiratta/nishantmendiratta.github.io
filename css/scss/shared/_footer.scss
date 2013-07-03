@@ -11,7 +11,7 @@ font-size: em(12);
 		.gitSource{
 			background: url('../assets/github_icon.png') no-repeat;
 			padding-left: 20px;
-			height: 25px;
+			padding-bottom: 20px;
 			color: red;
 				@include media($device_768) {
 				}
