@@ -37,6 +37,10 @@ font : 80%/1.5em "calluna", Georgia, serif;
 	border-radius: 2px 2px 2px 2px;
 	box-shadow: -6px 6px 1px #DCDCDC;
 	font-family: cursive;
+	a{
+		font-size: em(20);
+		color: #FFF;
+	}
 }
 
 .content-text{
