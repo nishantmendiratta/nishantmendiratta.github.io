@@ -50,7 +50,11 @@ body {
   font-size: 1em;
   color: #a80000; }
 
-.designer, .coder {
+.heart {
+  font-size: 1.375em;
+  color: red; }
+
+.special {
   clear: both;
   float: left;
   width: 100%;
@@ -71,17 +75,37 @@ body {
   box-shadow: -6px 6px 1px #DCDCDC;
   font-family: cursive; }
 
-.end-content {
-  clear: both; }
-  .end-content a {
+.content-text {
+  clear: both;
+  color: #9a9a9a;
+  font-style: italic; }
+  .content-text a {
     color: #FF0000; }
+  .content-text img {
+    padding: 10px 20px 10px 20px;
+    height: 70%;
+    width: 70%;
+    background: #F1F1F1;
+    border: 1px double #DCDCDC; }
+  .content-text .project-pic {
+    float: left;
+    width: 350px;
+    height: 150px;
+    margin-bottom: 20px; }
+  .content-text .sub-title {
+    clear: both;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 200; }
 
-.heart {
-  font-size: 1.375em;
-  color: red; }
-
-.footer-code {
-  color: #a80000; }
+.work-title {
+  clear: both;
+  font-family: Palatino Linotype;
+  color: #40908F;
+  font-size: 1.5em;
+  border-bottom: 1px solid #DCDCDC;
+  padding-bottom: 10px;
+  padding-top: 10px; }
 
 .topWrapper {
   margin-top: 20px; }
@@ -218,6 +242,9 @@ body {
       padding-left: 20px;
       padding-bottom: 20px;
       color: red; }
+
+.footer-code {
+  color: #a80000; }
 
 @media screen and (max-width: 480px) {
   .topWrapper nav ul {

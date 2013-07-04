@@ -1,6 +1,6 @@
 body{
 @include linear-gradient(to right , #F1F1F1, #FFF);
-color: #444444;
+color: #444444; 
 margin: 0 auto;
 font : 80%/1.5em "calluna", Georgia, serif;
 		a{
@@ -22,7 +22,12 @@ font : 80%/1.5em "calluna", Georgia, serif;
 		}
 }
 
-.designer,.coder{
+.heart{
+	font-size: em(22);
+	color: red;
+}
+
+.special{
 	@include zen-clear(both);
 	@include zen-grid-item(12,1);
 	background: #40908F;
@@ -34,19 +39,42 @@ font : 80%/1.5em "calluna", Georgia, serif;
 	font-family: cursive;
 }
 
-.end-content{
+.content-text{
 	@include zen-clear(both);
+	color: #9a9a9a;
+	font-style: italic;
 	a{
 		color: #FF0000;
 	}
+	img{
+		@include pad(10px 20px 10px 20px);
+		height: 70%;
+		width: 70%; 
+		background: #F1F1F1;
+		border: 1px double #DCDCDC;
+	}
+	.project-pic{
+		float: left;
+		width: 350px;
+		height: 150px;
+		margin-bottom: 20px;
+	}
+	.sub-title{
+		clear: both;
+		text-transform: uppercase;
+		font-style: normal;
+		font-weight: 200;
+	}
 }
 
-.heart{
-	font-size: em(22);
-	color: red;
+.work-title{
+	clear: both;
+	font-family:Palatino Linotype;
+	color: #40908F;
+	font-size: em(24);
+	border-bottom: 1px solid #DCDCDC;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
-.footer-code{
-	color:#a80000;
-}
 
