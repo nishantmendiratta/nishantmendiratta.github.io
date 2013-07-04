@@ -27,7 +27,7 @@ font : 80%/1.5em "calluna", Georgia, serif;
 	color: red;
 }
 
-.special{
+.special , .work-title{
 	@include zen-clear(both);
 	@include zen-grid-item(12,1);
 	background: #40908F;
@@ -70,7 +70,6 @@ font : 80%/1.5em "calluna", Georgia, serif;
 .work-title{
 	clear: both;
 	font-family:Palatino Linotype;
-	color: #40908F;
 	font-size: em(24);
 	border-bottom: 1px solid #DCDCDC;
 	padding-bottom: 10px;

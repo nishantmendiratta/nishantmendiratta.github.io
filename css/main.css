@@ -54,7 +54,7 @@ body {
   font-size: 1.375em;
   color: red; }
 
-.special {
+.special, .work-title {
   clear: both;
   float: left;
   width: 100%;
@@ -101,7 +101,6 @@ body {
 .work-title {
   clear: both;
   font-family: Palatino Linotype;
-  color: #40908F;
   font-size: 1.5em;
   border-bottom: 1px solid #DCDCDC;
   padding-bottom: 10px;
