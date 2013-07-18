@@ -1,5 +1,5 @@
 body{
-@include linear-gradient(to left , #E2E2E2 .1%, #FFF 80% );
+@include linear-gradient(to right , #F1F1F1 14%, #76C1D3 15% ,#FFF 15%);
 color: #444444; 
 margin: 0 auto;
 font : 80%/1.5em "calluna", Georgia, serif;
@@ -16,7 +16,7 @@ font : 80%/1.5em "calluna", Georgia, serif;
 	@include zen-grid-container;
 	.content{
 		@include zen-grid-item(8,3);
-		padding: 20px;
+		padding: em(20);
 		font-size: em(16);
 		color: #a80000;
 		}

@@ -13,13 +13,13 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #e2e2e2;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1%, #e2e2e2), color-stop(80%, white));
-  background-image: -webkit-linear-gradient(to left, #e2e2e2 0.1%, white 80%);
-  background-image: -moz-linear-gradient(to left, #e2e2e2 0.1%, white 80%);
-  background-image: -ms-linear-gradient(to left, #e2e2e2 0.1%, white 80%);
-  background-image: -o-linear-gradient(to left, #e2e2e2 0.1%, white 80%);
-  background-image: linear-gradient(to left, #e2e2e2 0.1%, white 80%);
+  background-color: #f1f1f1;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(14%, #f1f1f1), color-stop(15%, #76c1d3), color-stop(15%, white));
+  background-image: -webkit-linear-gradient(to right, #f1f1f1 14%, #76c1d3 15%, white 15%);
+  background-image: -moz-linear-gradient(to right, #f1f1f1 14%, #76c1d3 15%, white 15%);
+  background-image: -ms-linear-gradient(to right, #f1f1f1 14%, #76c1d3 15%, white 15%);
+  background-image: -o-linear-gradient(to right, #f1f1f1 14%, #76c1d3 15%, white 15%);
+  background-image: linear-gradient(to right, #f1f1f1 14%, #76c1d3 15%, white 15%);
   color: #444444;
   margin: 0 auto;
   font: 80%/1.5em "calluna", Georgia, serif; }
@@ -46,7 +46,7 @@ body {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  padding: 20px;
+  padding: 1.25em;
   font-size: 1em;
   color: #a80000; }
 
