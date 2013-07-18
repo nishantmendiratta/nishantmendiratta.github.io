@@ -48,6 +48,10 @@
 					float: none;
 					margin: 10px;
 				}
+				&:hover{
+					@include transition (all 3.0s ease-in-out);
+					@include transform(rotate(360deg));
+				}
 		}
 		.social-sharing{
 			margin: 10px;
