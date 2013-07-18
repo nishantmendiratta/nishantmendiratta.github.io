@@ -13,13 +13,13 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #f1f1f1;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(100%, white));
-  background-image: -webkit-linear-gradient(to right, #f1f1f1, white);
-  background-image: -moz-linear-gradient(to right, #f1f1f1, white);
-  background-image: -ms-linear-gradient(to right, #f1f1f1, white);
-  background-image: -o-linear-gradient(to right, #f1f1f1, white);
-  background-image: linear-gradient(to right, #f1f1f1, white);
+  background-color: #e2e2e2;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1%, #e2e2e2), color-stop(80%, white));
+  background-image: -webkit-linear-gradient(to left, #e2e2e2 0.1%, white 80%);
+  background-image: -moz-linear-gradient(to left, #e2e2e2 0.1%, white 80%);
+  background-image: -ms-linear-gradient(to left, #e2e2e2 0.1%, white 80%);
+  background-image: -o-linear-gradient(to left, #e2e2e2 0.1%, white 80%);
+  background-image: linear-gradient(to left, #e2e2e2 0.1%, white 80%);
   color: #444444;
   margin: 0 auto;
   font: 80%/1.5em "calluna", Georgia, serif; }
@@ -80,9 +80,9 @@ body {
 
 .content-text {
   clear: both;
-  color: #000;
-  font-style: italic;
-  font-family: cursive; }
+  color: #898686;
+  font-style: normal;
+  font: 120%/1.5em verdana,arial,sans-serif; }
   .content-text a {
     color: #FF0000; }
   .content-text img {
@@ -96,11 +96,14 @@ body {
     width: 350px;
     height: 150px;
     margin-bottom: 20px; }
+    .content-text .project-pic p {
+      font-size: 12px; }
   .content-text .sub-title {
     clear: both;
     text-transform: uppercase;
     font-style: normal;
-    font-weight: 200; }
+    font-weight: 200;
+    color: #000; }
 
 .work-title {
   clear: both;
@@ -128,7 +131,8 @@ body {
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    border-radius: 56px 0px 0px 0px; }
     .topWrapper .header .title {
       font-family: Lucida Console;
       margin: 10px; }

@@ -1,5 +1,5 @@
 body{
-@include linear-gradient(to right , #F1F1F1, #FFF);
+@include linear-gradient(to left , #E2E2E2 .1%, #FFF 80% );
 color: #444444; 
 margin: 0 auto;
 font : 80%/1.5em "calluna", Georgia, serif;
@@ -45,9 +45,10 @@ font : 80%/1.5em "calluna", Georgia, serif;
 
 .content-text{
 	@include zen-clear(both);
-	color: #000;
-	font-style: italic;
-	font-family: cursive;
+	color: #898686;
+	font-style: normal;
+	font : 120%/1.5em verdana,arial,sans-serif;
+
 	a{
 		color: #FF0000;
 	}
@@ -63,12 +64,16 @@ font : 80%/1.5em "calluna", Georgia, serif;
 		width: 350px;
 		height: 150px;
 		margin-bottom: 20px;
+		p{
+			font-size: 12px;
+		}
 	}
 	.sub-title{
 		clear: both;
 		text-transform: uppercase;
 		font-style: normal;
 		font-weight: 200;
+		color: #000;
 	}
 }
 
