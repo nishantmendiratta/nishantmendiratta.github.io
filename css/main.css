@@ -80,8 +80,9 @@ body {
 
 .content-text {
   clear: both;
-  color: #9a9a9a;
-  font-style: italic; }
+  color: #000;
+  font-style: italic;
+  font-family: cursive; }
   .content-text a {
     color: #FF0000; }
   .content-text img {
