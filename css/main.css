@@ -449,7 +449,7 @@ body {
   font-size: 1.375em;
   color: red; }
 
-.special, .work-title {
+.special, .work-title, .post-title {
   clear: both;
   float: left;
   width: 100%;
@@ -469,36 +469,39 @@ body {
   border-radius: 2px 2px 2px 2px;
   box-shadow: -6px 6px 1px #DCDCDC;
   font-family: cursive; }
-  .special a, .work-title a {
+  .special a, .work-title a, .post-title a {
     font-size: 1.25em;
     color: #FFF; }
 
-.content-text {
+.content-text, .post-text {
   clear: both;
   color: #898686;
   font-style: normal;
   font: 120%/1.5em verdana,arial,sans-serif; }
-  .content-text a {
+  .content-text a, .post-text a {
     color: #FF0000; }
-  .content-text img {
+  .content-text img, .post-text img {
     padding: 10px 20px 10px 20px;
     height: 70%;
     width: 70%;
     background: #F1F1F1;
     border: 1px double #DCDCDC; }
-  .content-text .project-pic {
+  .content-text .project-pic, .post-text .project-pic {
     float: left;
     width: 350px;
     height: 150px;
     margin-bottom: 20px; }
-    .content-text .project-pic p {
+    .content-text .project-pic p, .post-text .project-pic p {
       font-size: 12px; }
-  .content-text .sub-title {
+  .content-text .sub-title, .post-text .sub-title {
     clear: both;
     text-transform: uppercase;
     font-style: normal;
     font-weight: 200;
     color: #000; }
+
+.post-text a {
+  color: #000; }
 
 .work-title {
   clear: both;
