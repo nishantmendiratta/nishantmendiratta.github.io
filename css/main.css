@@ -388,16 +388,15 @@ body {
   box-sizing: border-box;
   word-wrap: break-word;
   font-size: 4.0625em;
-  background: #F9B512;
-  box-shadow: 5px 5px #76C1D3;
-  border-right: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
+  border-right: 1px solid #76C1D3;
+  box-shadow: 5px 4px #777575;
+  border-radius: 32px;
+  text-shadow: 2px 4px #777575;
   z-index: 1;
   position: fixed;
   text-align: center;
   color: #FFF;
-  text-shadow: 5px 5px #000;
-  font-family: fantasy;
+  font-family: serif;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
   -ms-transition: all 0.5s linear;
@@ -409,11 +408,16 @@ body {
     -ms-transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
-    -webkit-transform: rotateZ(10deg);
-    -moz-transform: rotateZ(10deg);
-    -ms-transform: rotateZ(10deg);
-    -o-transform: rotateZ(10deg);
-    transform: rotateZ(10deg); }
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg); }
+  .banner .c {
+    font-size: 1.375em;
+    color: #FFEB95;
+    text-shadow: 2px 4px #000;
+    font-family: cursive; }
   @media screen and (max-width: 786px) {
     .banner {
       display: none; } }

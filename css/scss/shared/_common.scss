@@ -23,20 +23,25 @@ font : 80%/1.5em "calluna", Georgia, serif;
 .banner{
 		@include zen-grid-item(1,1.3);
 		font-size: em(65);
-		background: #F9B512;
-		box-shadow: 5px 5px #76C1D3;
-		border-right: 1px solid #FFF;
-		border-bottom: 1px solid #FFF;
+		border-right: 1px solid #76C1D3;
+		box-shadow: 5px 4px #777575;
+		border-radius: 32px;
+		text-shadow:2px 4px #777575;
 		z-index: 1;
 		position: fixed;
 		text-align: center;
 		color: #FFF;
-		text-shadow:5px 5px #000;
-		font-family: fantasy;
+		font-family: serif;
 		@include transition (all .5s linear);
 		&:hover{
 			@include transition (all .5s linear);
-			@include transform(rotateZ(10deg));
+			@include transform(rotateZ(360deg));
+		}
+		.c{
+			font-size: em(22);
+			color: #FFEB95;
+			text-shadow:2px 4px #000;
+			font-family: cursive;
 		}
 				@include media($device_768) {
 					display: none;
