@@ -1,18 +1,27 @@
 .topWrapper{ 
 	@include zen-grid-container;
-	margin-top: 20px;
 	.header{
-		@include zen-grid-item(8,3);
+		@include zen-clear(both);
+		@include zen-grid-item(8,2.6);
 				@include media($device_768) {
 
 				}
 				@include media($device_480) {
 				}
 		.title{
-			font-family:Lucida Console;
 			margin: 10px;
+			font-size: em(21);
+			color: #FFEB95;
+			text-shadow:2px 2px #F1F1F1;
+			font-family: cursive;
 			a{
 					font-size: em(24);
+					color: #000;
+					text-shadow:2px 2px #F1F1F1;
+   			}
+   			.k{
+   				font-size: em(23);
+   				color: #480049;
    			}
    			@include media($device_480) {
 					@include zen-clear(both);
@@ -27,7 +36,7 @@
 				}
 		}
 		.admin-pic{
-				background: url('../assets/admin.jpg') no-repeat;
+				background: url('../assets/kt_logo.jpg') no-repeat;
 				position: center;
 				height: 150px;
 				width: 145px;

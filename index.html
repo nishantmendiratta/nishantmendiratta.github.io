@@ -6,17 +6,12 @@ meta:
   description: Hey , I'm a developer , always get fascinated by new technology .This website is just a prototype, developed to get familiar with the workflow of Jekyll and Git.
 ---
 
-    <ul class="recent-blog-posts">
-	    
 	    {% for post in site.posts do %}
-	    <li>
 	    	<p>
 	    	<div class="post-text">
 	    		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+		    	<span class="date">{{ post.date | date_to_long_string }}</span>
 		    	<p>{{ post.excerpt }}</p>
 		    </div>
 	    	</p>
-	    </li>
 	    {% endfor %}
-
-    </ul>
