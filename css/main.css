@@ -504,8 +504,22 @@ body {
     font-weight: 200;
     color: #000; }
 
-.post-text a {
-  color: #000; }
+.recent-blog-posts {
+  clear: both; }
+  .recent-blog-posts li {
+    list-style: none; }
+
+.post-text {
+  clear: both;
+  background: #F1F1F1;
+  padding: 25px;
+  margin: 10px;
+  border: 1px dashed #777575; }
+  .post-text a {
+    border-bottom: 1px solid #DCDCDC;
+    color: #40908F;
+    font-size: 1.25em;
+    padding-bottom: 5px; }
 
 .work-title {
   clear: both;

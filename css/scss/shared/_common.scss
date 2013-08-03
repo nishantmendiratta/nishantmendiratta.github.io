@@ -90,7 +90,6 @@ font : 80%/1.5em "calluna", Georgia, serif;
 	color: #898686;
 	font-style: normal;
 	font : 120%/1.5em verdana,arial,sans-serif;
-
 	a{
 		color: #FF0000;
 	}
@@ -119,8 +118,25 @@ font : 80%/1.5em "calluna", Georgia, serif;
 	}
 }
 
-.post-text a{
-	color: #000;
+.recent-blog-posts {
+	@include zen-clear(both);
+	li {
+		list-style: none;
+	}
+}
+
+.post-text {
+	@include zen-clear(both);
+	background: #F1F1F1;
+	padding: 25px;
+	margin: 10px;
+	border: 1px dashed #777575;
+	a{	
+		border-bottom: 1px solid #DCDCDC;
+		color: #40908F;
+		font-size: em(20);
+		padding-bottom: 5px;
+	}
 }
 
 .work-title{
