@@ -161,3 +161,12 @@ font : 80%/1.5em "calluna", Georgia, serif;
 #fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span {
 width: 100% !important;
 }
+
+.code{
+	padding: 10px;
+	font-size: em(16);
+	color: #480049;
+	font-family: sans-serif;
+	background: #FFF;
+	border: 2px solid #DCDCDC;
+}

@@ -513,6 +513,14 @@ body {
 #fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span {
   width: 100% !important; }
 
+.code {
+  padding: 10px;
+  font-size: 1em;
+  color: #480049;
+  font-family: sans-serif;
+  background: #FFF;
+  border: 2px solid #DCDCDC; }
+
 .topWrapper:before, .topWrapper:after {
   content: "";
   display: table; }
