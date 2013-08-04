@@ -541,16 +541,15 @@ body {
   word-wrap: break-word; }
   .topWrapper .header .title {
     margin: 10px;
-    font-size: 1.3125em;
+    font-size: 1.25em;
     color: #FFEB95;
-    text-shadow: 2px 2px #F1F1F1;
-    font-family: cursive; }
+    text-shadow: 2px 2px #F1F1F1; }
     .topWrapper .header .title a {
-      font-size: 1.5em;
+      font-size: 1.25em;
       color: #000;
       text-shadow: 2px 2px #F1F1F1; }
     .topWrapper .header .title .k {
-      font-size: 1.4375em;
+      font-size: 1.375em;
       color: #480049; }
     @media screen and (max-width: 480px) {
       .topWrapper .header .title {

@@ -10,17 +10,16 @@
 				}
 		.title{
 			margin: 10px;
-			font-size: em(21);
+			font-size: em(20);
 			color: #FFEB95;
 			text-shadow:2px 2px #F1F1F1;
-			font-family: cursive;
 			a{
-					font-size: em(24);
+					font-size: em(20);
 					color: #000;
 					text-shadow:2px 2px #F1F1F1;
    			}
    			.k{
-   				font-size: em(23);
+   				font-size: em(22);
    				color: #480049;
    			}
    			@include media($device_480) {
