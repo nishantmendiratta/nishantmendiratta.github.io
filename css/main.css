@@ -502,6 +502,9 @@ body {
   padding-bottom: 10px;
   padding-top: 10px; }
 
+.fb-comments {
+  clear: both; }
+
 .topWrapper:before, .topWrapper:after {
   content: "";
   display: table; }

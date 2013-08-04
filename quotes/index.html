@@ -1,17 +1,26 @@
 ---
 layout: default
 meta:
-  title: Blog | Knowledge-Thirsty Web-Developer 
+  title: Quotes | Knowledge-Thirsty Web-Developer 
   keywords:  Nishant Mendiratta ,Knowledge-Thirsty Web-Developer ,Front-End Developer ,HTML5 ,CSS3 ,SASS ,Jeykll ,Git ,New-Delhi , Web , Developer , JavaScript, PHP  
   description: Hey , I'm a developer , always get fascinated by new technology .This website is just a prototype, developed to get familiar with the workflow of Jekyll and Git.
 ---
 
-	    {% for post in site.categories.blog do %}
+<div>
+
+		 {% for post in site.categories.quotes do %}
 	    	<p>
 	    	<div class="post-text">
-	    		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-		    	<span class="date">{{ post.date | date_to_long_string }}</span>
-		    	<p>{{ post.excerpt }}</p>
+		    	<p>
+		    		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
+		    			{{ post.excerpt }}
+		    		</a> 
+		    		- {{ post.title }}
+		    		<span class="date">{{ post.date | date_to_long_string }}</span>
+		    	</p>
 		    </div>
+
 	    	</p>
 	    {% endfor %}
+
+</div>
