@@ -510,8 +510,8 @@ body {
   padding-bottom: 10px;
   padding-top: 10px; }
 
-.fb-comments {
-  clear: both; }
+#fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span {
+  width: 100% !important; }
 
 .topWrapper:before, .topWrapper:after {
   content: "";
