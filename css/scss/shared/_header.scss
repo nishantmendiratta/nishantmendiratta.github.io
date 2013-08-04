@@ -44,9 +44,12 @@
 				margin-right: 25px;
   				border-radius: 86px;
 				box-shadow: -8px 0px 6px #DCDCDC;
-				@include transform(rotate(360deg));
-				@include transition (all .3s linear);
-
+				@include transform(rotate(-30deg));
+				@include transition (all .6s linear);
+				&:hover{
+					@include transform(rotate(0deg));
+					@include transition (all .6s linear);
+				}
 				@include media($device_768) {
 					display: block;
 				}
