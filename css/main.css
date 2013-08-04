@@ -368,6 +368,14 @@ body {
     body {
       background: #FFF; } }
 
+.random a {
+  font-size: 2em;
+  color: #FFEB95;
+  text-shadow: 2px 4px #000;
+  font-family: cursive;
+  float: left;
+  margin-left: 10px; }
+
 .banner {
   text-shadow: 1px 1px #777575;
   text-align: right;
@@ -376,7 +384,7 @@ body {
   background: #222222;
   margin: 0 auto;
   margin-bottom: 6px;
-  padding: 5px;
+  padding: 20px;
   font-size: 1.375em;
   text-shadow: 2px 4px #000;
   font-family: cursive;
@@ -505,129 +513,131 @@ body {
 .fb-comments {
   clear: both; }
 
-.topWrapper:before, .topWrapper:after {
-  content: "";
-  display: table; }
-.topWrapper:after {
-  clear: both; }
-.topWrapper .header {
-  clear: both;
-  float: left;
-  width: 66.66667%;
-  margin-left: 13.33333%;
-  margin-right: -100%;
-  padding-left: 5px;
-  padding-right: 5px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word; }
-  .topWrapper .header .title {
-    margin: 10px;
-    font-size: 1.3125em;
-    color: #FFEB95;
-    text-shadow: 2px 2px #F1F1F1;
-    font-family: cursive; }
-    .topWrapper .header .title a {
-      font-size: 1.5em;
-      color: #000;
-      text-shadow: 2px 2px #F1F1F1; }
-    .topWrapper .header .title .k {
-      font-size: 1.4375em;
-      color: #480049; }
-    @media screen and (max-width: 480px) {
-      .topWrapper .header .title {
-        clear: both;
-        float: left;
-        width: 100%;
-        margin-left: 0%;
-        margin-right: -100%;
-        padding-left: 5px;
-        padding-right: 5px;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-        box-sizing: border-box;
-        word-wrap: break-word;
-        font-size: 1.25em; } }
-    @media screen and (max-width: 320px) {
-      .topWrapper .header .title {
-        clear: both;
-        float: left;
-        width: 100%;
-        margin-left: 0%;
-        margin-right: -100%;
-        padding-left: 5px;
-        padding-right: 5px;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-        box-sizing: border-box;
-        word-wrap: break-word;
-        font-size: 1.125em; } }
-  .topWrapper .header .admin-pic {
-    background: url("../assets/kt_logo.jpg") no-repeat;
-    position: center;
-    height: 150px;
-    width: 145px;
+.topWrapper {
+  margin-top: 20px; }
+  .topWrapper:before, .topWrapper:after {
+    content: "";
+    display: table; }
+  .topWrapper:after {
+    clear: both; }
+  .topWrapper .header {
+    clear: both;
     float: left;
-    margin-right: 25px;
-    border-radius: 86px;
-    box-shadow: -8px 0px 6px #DCDCDC;
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear; }
-    @media screen and (max-width: 786px) {
-      .topWrapper .header .admin-pic {
-        display: block; } }
-    @media screen and (max-width: 480px) {
-      .topWrapper .header .admin-pic {
-        display: block;
-        float: none;
-        margin: 10px; } }
-    @media screen and (max-width: 320px) {
-      .topWrapper .header .admin-pic {
-        display: block;
-        float: none;
-        margin: 10px; } }
-  .topWrapper .header .social-sharing {
-    margin: 10px; }
-    @media screen and (max-width: 480px) {
-      .topWrapper .header .social-sharing {
-        clear: both;
-        float: left;
-        width: 100%;
-        margin-left: 0%;
-        margin-right: -100%;
-        padding-left: 5px;
-        padding-right: 5px;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-        box-sizing: border-box;
-        word-wrap: break-word; } }
-    @media screen and (max-width: 320px) {
-      .topWrapper .header .social-sharing {
-        clear: both;
-        float: left;
-        width: 100%;
-        margin-left: 0%;
-        margin-right: -100%;
-        padding-left: 5px;
-        padding-right: 5px;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-        box-sizing: border-box;
-        word-wrap: break-word; } }
+    width: 66.66667%;
+    margin-left: 13.33333%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word; }
+    .topWrapper .header .title {
+      margin: 10px;
+      font-size: 1.3125em;
+      color: #FFEB95;
+      text-shadow: 2px 2px #F1F1F1;
+      font-family: cursive; }
+      .topWrapper .header .title a {
+        font-size: 1.5em;
+        color: #000;
+        text-shadow: 2px 2px #F1F1F1; }
+      .topWrapper .header .title .k {
+        font-size: 1.4375em;
+        color: #480049; }
+      @media screen and (max-width: 480px) {
+        .topWrapper .header .title {
+          clear: both;
+          float: left;
+          width: 100%;
+          margin-left: 0%;
+          margin-right: -100%;
+          padding-left: 5px;
+          padding-right: 5px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          word-wrap: break-word;
+          font-size: 1.25em; } }
+      @media screen and (max-width: 320px) {
+        .topWrapper .header .title {
+          clear: both;
+          float: left;
+          width: 100%;
+          margin-left: 0%;
+          margin-right: -100%;
+          padding-left: 5px;
+          padding-right: 5px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          word-wrap: break-word;
+          font-size: 1.125em; } }
+    .topWrapper .header .admin-pic {
+      background: url("../assets/kt_logo.jpg") no-repeat;
+      position: center;
+      height: 150px;
+      width: 145px;
+      float: left;
+      margin-right: 25px;
+      border-radius: 86px;
+      box-shadow: -8px 0px 6px #DCDCDC;
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+      @media screen and (max-width: 786px) {
+        .topWrapper .header .admin-pic {
+          display: block; } }
+      @media screen and (max-width: 480px) {
+        .topWrapper .header .admin-pic {
+          display: block;
+          float: none;
+          margin: 10px; } }
+      @media screen and (max-width: 320px) {
+        .topWrapper .header .admin-pic {
+          display: block;
+          float: none;
+          margin: 10px; } }
+    .topWrapper .header .social-sharing {
+      margin: 10px; }
+      @media screen and (max-width: 480px) {
+        .topWrapper .header .social-sharing {
+          clear: both;
+          float: left;
+          width: 100%;
+          margin-left: 0%;
+          margin-right: -100%;
+          padding-left: 5px;
+          padding-right: 5px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          word-wrap: break-word; } }
+      @media screen and (max-width: 320px) {
+        .topWrapper .header .social-sharing {
+          clear: both;
+          float: left;
+          width: 100%;
+          margin-left: 0%;
+          margin-right: -100%;
+          padding-left: 5px;
+          padding-right: 5px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          word-wrap: break-word; } }
 
 .bottomWrapper {
   margin-top: 5px;

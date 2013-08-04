@@ -19,6 +19,15 @@ font : 80%/1.5em "calluna", Georgia, serif;
 				}
 }
 
+.random a{
+	font-size: em(32);
+	color: #FFEB95;
+	text-shadow:2px 4px #000;
+	font-family: cursive;
+	float: left;
+	margin-left: 10px;
+}
+
 .banner{
 		text-shadow:1px 1px #777575;
 		text-align: right;
@@ -27,7 +36,7 @@ font : 80%/1.5em "calluna", Georgia, serif;
 		background: #222222;
 		margin: 0 auto;
 		margin-bottom: 6px;
-		padding: 5px;
+		padding: 20px;
 		font-size: em(22);
 		text-shadow:2px 4px #000;
 		font-family: cursive;
