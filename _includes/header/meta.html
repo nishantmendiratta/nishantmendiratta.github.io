@@ -1,6 +1,6 @@
 <title>{% if page.meta.title %}{{ page.meta.title }}{% elsif page.title %}{{ page.title }}{% endif %}</title>
 
-<meta charset="utf-8">
+<meta charset="utf-8"> 
 
 <meta name="description" content="{% if page.meta.description %}{{ page.meta.description }}{% else %}{{ page.excerpt }}{% endif %}" />
 
@@ -14,7 +14,7 @@
 
 <link rel="stylesheet" href="/css/main.css" />
 
-<link rel="image_src" href="{{ site.url }}{{ site.baseurl }}//assets/kt_logo.jpg" />
+<link rel="image_src" href="{% if page.image.src %}{{ page.image.src }}{% else %}{{ ..//assets/kt_logo.jpg}}{% endif %}" />
 
 <meta name="google-site-verification" content="8ohpAkUrmFxlAASi6ul9juHfVPt9Yap-JPJ5TXg0g7o" />
 
