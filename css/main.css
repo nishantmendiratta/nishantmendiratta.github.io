@@ -405,26 +405,69 @@ body {
     .banner {
       display: none; } }
 
-.wrapper:before, .wrapper:after {
-  content: "";
-  display: table; }
-.wrapper:after {
+.wrapper {
   clear: both; }
-.wrapper .content {
-  float: left;
-  width: 66.66667%;
-  margin-left: 13.33333%;
-  margin-right: -100%;
-  padding-left: 5px;
-  padding-right: 5px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  padding: 1.25em;
-  font-size: 1em;
-  color: #a80000; }
+  .wrapper:before, .wrapper:after {
+    content: "";
+    display: table; }
+  .wrapper:after {
+    clear: both; }
+  .wrapper .content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 13.33333%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding: 1.25em;
+    font-size: 1em;
+    color: #a80000; }
+    @media screen and (max-width: 786px) {
+      .wrapper .content {
+        float: left;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: -100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word; } }
+    @media screen and (max-width: 480px) {
+      .wrapper .content {
+        float: left;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: -100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        font-size: 0.875em; } }
+    @media screen and (max-width: 320px) {
+      .wrapper .content {
+        float: left;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: -100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        font-size: 0.75em; } }
 
 .heart {
   font-size: 1.375em;
@@ -527,7 +570,6 @@ body {
 .topWrapper:after {
   clear: both; }
 .topWrapper .header {
-  clear: both;
   float: left;
   width: 66.66667%;
   margin-left: 13.33333%;
@@ -538,8 +580,38 @@ body {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  float: none; }
+  @media screen and (max-width: 786px) {
+    .topWrapper .header {
+      text-align: center;
+      float: left;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: -100%;
+      padding-left: 5px;
+      padding-right: 5px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      word-wrap: break-word; } }
+  @media screen and (max-width: 480px) {
+    .topWrapper .header {
+      text-align: center;
+      float: left;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: -100%;
+      padding-left: 5px;
+      padding-right: 5px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      word-wrap: break-word; } }
   .topWrapper .header .title {
+    padding-top: 20px;
     margin: 10px;
     font-size: 1.25em;
     color: #FFEB95;
@@ -548,6 +620,38 @@ body {
       font-size: 1.25em;
       color: #000;
       text-shadow: 2px 2px #F1F1F1; }
+      @media screen and (max-width: 480px) {
+        .topWrapper .header .title a {
+          clear: both;
+          float: left;
+          width: 100%;
+          margin-left: 0%;
+          margin-right: -100%;
+          padding-left: 5px;
+          padding-right: 5px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          word-wrap: break-word;
+          margin: 10px;
+          font-size: 1.125em; } }
+      @media screen and (max-width: 320px) {
+        .topWrapper .header .title a {
+          clear: both;
+          float: left;
+          width: 100%;
+          margin-left: 0%;
+          margin-right: -100%;
+          padding-left: 5px;
+          padding-right: 5px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          word-wrap: break-word;
+          margin: 10px;
+          font-size: 1em; } }
     .topWrapper .header .title .k {
       font-size: 1.375em;
       color: #480049; }
@@ -565,7 +669,7 @@ body {
         -ms-box-sizing: border-box;
         box-sizing: border-box;
         word-wrap: break-word;
-        font-size: 1.25em; } }
+        font-size: 0.875em; } }
     @media screen and (max-width: 320px) {
       .topWrapper .header .title {
         clear: both;
@@ -580,10 +684,11 @@ body {
         -ms-box-sizing: border-box;
         box-sizing: border-box;
         word-wrap: break-word;
-        font-size: 1.125em; } }
+        font-size: 0.75em; } }
   .topWrapper .header .admin-pic {
     background: url("../assets/kt_logo.jpg") no-repeat;
     position: center;
+    margin-top: -20px;
     height: 150px;
     width: 145px;
     float: left;
@@ -616,16 +721,28 @@ body {
         display: block; } }
     @media screen and (max-width: 480px) {
       .topWrapper .header .admin-pic {
-        display: block;
         float: none;
-        margin: 10px; } }
+        margin: 0 auto; } }
     @media screen and (max-width: 320px) {
       .topWrapper .header .admin-pic {
-        display: block;
         float: none;
-        margin: 10px; } }
+        margin: 0 auto; } }
   .topWrapper .header .social-sharing {
     margin: 10px; }
+    @media screen and (max-width: 786px) {
+      .topWrapper .header .social-sharing {
+        clear: both;
+        float: left;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: -100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word; } }
     @media screen and (max-width: 480px) {
       .topWrapper .header .social-sharing {
         clear: both;
@@ -656,6 +773,7 @@ body {
         word-wrap: break-word; } }
 
 .bottomWrapper {
+  clear: both;
   margin-top: 5px;
   text-align: center;
   font-size: 0.75em; }
@@ -683,10 +801,39 @@ body {
       padding-left: 20px;
       padding-bottom: 20px;
       color: red; }
+    @media screen and (max-width: 480px) {
+      .bottomWrapper footer {
+        float: left;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: -100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word; } }
+    @media screen and (max-width: 320px) {
+      .bottomWrapper footer {
+        float: left;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: -100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word; } }
 
 .footer-code {
   color: #a80000; }
 
+@media screen and (max-width: 786px) {
+  .topWrapper nav ul {
+    clear: both; } }
 @media screen and (max-width: 480px) {
   .topWrapper nav ul {
     clear: both;
@@ -716,7 +863,7 @@ body {
     box-sizing: border-box;
     word-wrap: break-word; } }
 .topWrapper nav ul li {
-  display: inline-block;
+  display: inline;
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 10px;
@@ -725,10 +872,14 @@ body {
   box-shadow: 5px 5px #916691; }
   .topWrapper nav ul li a {
     color: #444444; }
+  @media screen and (max-width: 786px) {
+    .topWrapper nav ul li {
+      display: inline-block; } }
   @media screen and (max-width: 480px) {
     .topWrapper nav ul li {
       margin: 10;
-      display: block; } }
+      display: inline-block;
+      padding: 5px; } }
   @media screen and (max-width: 320px) {
     .topWrapper nav ul li {
       margin: 10px;

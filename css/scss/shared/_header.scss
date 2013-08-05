@@ -1,14 +1,18 @@
 .topWrapper{
 	@include zen-grid-container;
 	.header{
-		@include zen-clear(both);
-		@include zen-grid-item(8,2.6);
+		@include zen-grid-item(8,2.6); 
+		float: none;
 				@include media($device_768) {
-
+					text-align: center;
+					@include zen-grid-item(12,1)
 				}
 				@include media($device_480) {
+					text-align: center;
+					@include zen-grid-item(12,1); 
 				}
 		.title{
+			padding-top: 20px;
 			margin: 10px;
 			font-size: em(20);
 			color: #FFEB95;
@@ -17,6 +21,18 @@
 					font-size: em(20);
 					color: #000;
 					text-shadow:2px 2px #F1F1F1;
+					@include media($device_480) {
+						@include zen-clear(both);
+						@include zen-grid-item(12,1);
+						margin: 10px;
+						font-size: em(18);
+					}
+					@include media($device_320) {
+						@include zen-clear(both);
+						@include zen-grid-item(12,1);
+						margin: 10px;
+						font-size: em(16);
+					}
    			}
    			.k{
    				font-size: em(22);
@@ -25,18 +41,19 @@
    			@include media($device_480) {
 					@include zen-clear(both);
 					@include zen-grid-item(12,1);
-					font-size: em(20);
+					font-size: em(14);
 
 				}
 				@include media($device_320) {
 					@include zen-clear(both);
 					@include zen-grid-item(12,1);
-					font-size: em(18);
+					font-size: em(12);
 				}
 		}
 		.admin-pic{
 				background: url('../assets/kt_logo.jpg') no-repeat;
 				position: center;
+				margin-top: -20px;
 				height: 150px;
 				width: 145px;
 				float: left;
@@ -53,19 +70,19 @@
 					display: block;
 				}
 				@include media($device_480) {
-					display: block;
 					float: none;
-					margin: 10px;
+					margin: 0 auto;
 				}
 				@include media($device_320) {
-					display: block;
 					float: none;
-					margin: 10px;
+					margin: 0 auto;
 				}
 		}
 		.social-sharing{
 			margin: 10px;
 				@include media($device_768) {
+					@include zen-clear(both);
+					@include zen-grid-item(12,1);
 				}
 				@include media($device_480) {
 					@include zen-clear(both);

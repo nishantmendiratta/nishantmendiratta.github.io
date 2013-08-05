@@ -7,7 +7,7 @@ font : 80%/1.5em "calluna", Georgia, serif;
 			 text-decoration: none;
 		}
 		span{
-			color: #000;
+			color: #000; 
 		}
 		@include media($device_768) {
 				}
@@ -60,12 +60,24 @@ font : 80%/1.5em "calluna", Georgia, serif;
 }
 
 .wrapper{
+	@include zen-clear(both);
 	@include zen-grid-container;
 	.content{
 		@include zen-grid-item(8,2.6);
 		padding: em(20);
 		font-size: em(16);
 		color: #a80000;
+				@include media($device_768) {
+					@include zen-grid-item(12,1);
+				}
+				@include media($device_480) {
+					@include zen-grid-item(12,1);
+					font-size: em(14);
+				}
+				@include media($device_320) {
+					@include zen-grid-item(12,1);
+					font-size: em(12);
+				}
 		}
 }
 

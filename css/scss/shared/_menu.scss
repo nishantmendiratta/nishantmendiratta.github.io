@@ -1,7 +1,7 @@
 .topWrapper{
 	nav ul{
 				@include media($device_768) {
-
+					@include zen-clear(both);
 				}
 				@include media($device_480) {
 					@include zen-clear(both);
@@ -12,7 +12,7 @@
 					@include zen-grid-item(12,1);
 				}
 			li{
-				display: inline-block;
+				display: inline;
 				margin-right: 10px;
 				margin-bottom: 10px;
 				padding: 10px;
@@ -22,9 +22,13 @@
 				a{
 					color: #444444;
 				}
+				@include media($device_768) {
+					display: inline-block;
+				}	
 				@include media($device_480) {
 					margin: 10;
-					display: block;
+					display: inline-block;
+					padding: 5px;
 				}
 				@include media($device_320) {
 					margin: 10px;
