@@ -379,31 +379,28 @@ body {
 .banner {
   text-shadow: 1px 1px #777575;
   text-align: right;
-  color: #FFF;
   font-family: serif;
-  background: #222222;
+  background: #F1F1F1;
   margin: 0 auto;
   margin-bottom: 6px;
   padding: 5px;
   font-size: 1em;
-  text-shadow: 2px 4px #000;
+  text-shadow: 1px 1px #FFF;
   font-family: cursive;
-  color: #FFF;
-  padding-right: 30px; }
+  color: #000;
+  padding-right: 30px;
+  border-bottom: 2px double #DCDCDC; }
   .banner .c {
     font-size: 1.3125em;
-    color: #FFEB95;
-    text-shadow: 2px 4px #000;
+    color: #000;
+    text-shadow: 1px 1px #FFF;
     font-family: cursive; }
-  @media screen and (max-width: 786px) {
-    .banner {
-      display: none; } }
   @media screen and (max-width: 480px) {
     .banner {
-      display: none; } }
+      font-size: 0.875em; } }
   @media screen and (max-width: 320px) {
     .banner {
-      display: none; } }
+      font-size: 0.75em; } }
 
 .wrapper {
   clear: both; }
