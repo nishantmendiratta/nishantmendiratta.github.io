@@ -62,11 +62,11 @@
 				margin-right: 25px;
 				border-radius: 0px 86px 0px 86px;
   				box-shadow: -8px 1px 6px #DCDCDC;
-				@include transform(rotate(-45deg));
 				@include transition (all .6s linear);
 				&:hover{
-					@include transform(rotate(0deg));
 					@include transition (all .6s linear);
+					border-radius: 86px 0px  86px 0px ;
+					box-shadow: 6px 1px 6px #DCDCDC;
 				}
 				@include media($device_1024) {
 					border-radius: 0px 46px 0px 46px;
