@@ -67,6 +67,18 @@
 					@include transition (all .6s linear);
 					border-radius: 86px 0px  86px 0px ;
 					box-shadow: 6px 1px 6px #DCDCDC;
+					@include media($device_1024) {
+					border-radius: 0px 46px 0px 46px;
+					}
+					@include media($device_768) {
+						border-radius: 46px 0px  46px 0px ;
+					}
+					@include media($device_480) {
+						border-radius: 46px 0px  46px 0px ;
+					}
+					@include media($device_320) {
+						border-radius: 26px 0px  26px 0px ;
+					}
 				}
 				@include media($device_1024) {
 					border-radius: 0px 46px 0px 46px;
