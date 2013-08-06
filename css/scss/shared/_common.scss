@@ -6,7 +6,7 @@ font : 80%/1.5em "calluna", Georgia, serif;
 			 color: #000;
 			 text-decoration: none;
 		}
-		span{
+		span{ 
 			color: #000; 
 		}
 		@include media($device_768) {
@@ -158,6 +158,10 @@ font : 80%/1.5em "calluna", Georgia, serif;
 	.date{
 		font-size: em(14);
 		float: right;
+	}
+	.post-image{
+		margin-right:10px;
+		border:1px solid #DCDCDC;
 	}
 }
 

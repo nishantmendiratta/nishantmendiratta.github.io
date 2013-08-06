@@ -544,6 +544,9 @@ body {
   .post-text .date {
     font-size: 0.875em;
     float: right; }
+  .post-text .post-image {
+    margin-right: 10px;
+    border: 1px solid #DCDCDC; }
 
 .work-title {
   clear: both;
