@@ -18,6 +18,11 @@ meta:
 		    		- {{ post.title }}
 		    		<span class="date">{{ post.date | date_to_long_string }}</span>
 		    	</p>
+		    	<p align="right" >
+		    		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
+		    		<fb:comments-count href="{{ site.url }}{{ site.baseurl }}{{ post.url }}/"></fb:comments-count> comments 
+		    		</a>
+		    	</p>
 		    </div>
 
 	    	</p>
