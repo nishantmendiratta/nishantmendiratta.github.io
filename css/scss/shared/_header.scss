@@ -28,13 +28,15 @@
 					@include media($device_480) {
 						@include zen-clear(both);
 						@include zen-grid-item(12,1);
-						margin: 10px;
+						padding: 0px;
+						margin: 0 auto;
 						font-size: em(18);
 					}
 					@include media($device_320) {
 						@include zen-clear(both);
 						@include zen-grid-item(12,1);
-						margin: 10px;
+						padding: 0px;
+						margin: 0 auto;
 						font-size: em(18);
 					}
    			}
@@ -93,10 +95,12 @@
 				}
 				@include media($device_480) {
 					@include zen-clear(both);
+					margin: 0 auto;
 					@include zen-grid-item(12,1);
 				}
 				@include media($device_320) {
 					@include zen-clear(both);
+					margin: 0 auto;
 					@include zen-grid-item(12,1);
 				}
 		}
