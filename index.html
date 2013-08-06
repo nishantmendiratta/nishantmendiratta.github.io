@@ -17,12 +17,15 @@ meta:
 	    		<a style="text-align:top" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 		    	<span class="date">{{ post.date | date_to_long_string }}</span>
 
+		    	<br />
+		    	<br>
 		    	<div class="post-excerpt">{{ post.excerpt }}</div>
 
-		    	<p>
-		    		<fb:comments-count href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"></fb:comments-count> awesome comments 
+		    	<p align="right" >
+		    		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
+		    		<fb:comments-count href="{{ site.url }}{{ site.baseurl }}{{ post.url }}/"></fb:comments-count> comments 
+		    		</a>
 		    	</p>
-		    	<br />
 		    </div>
 	    
 	    {% endfor %}
