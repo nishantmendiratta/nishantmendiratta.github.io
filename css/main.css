@@ -738,7 +738,7 @@ body {
         margin: 0 auto; } }
     @media screen and (max-width: 320px) {
       .topWrapper .header .admin-pic {
-        border-radius: 0px 36px 0px 36px;
+        border-radius: 0px 26px 0px 26px;
         float: none;
         margin: 0 auto; } }
   .topWrapper .header .social-sharing {
