@@ -12,7 +12,7 @@
 					@include zen-grid-item(12,1); 
 				}
 		.title{
-			padding-top: 20px;
+			padding-top: 20px; 
 			margin: 10px;
 			font-size: em(20);
 			color: #FFEB95;
@@ -55,30 +55,32 @@
 				}
 		}
 		.admin-pic{
-				background: url('../assets/kt_logo.jpg') no-repeat;
-				position: center;
 				margin-top: -20px;
-				height: 150px;
-				width: 145px;
 				float: left;
 				margin-right: 25px;
-  				border-radius: 86px;
-				box-shadow: -8px 0px 6px #DCDCDC;
-				@include transform(rotate(-30deg));
+				border-radius: 0px 86px 0px 86px;
+  				box-shadow: -8px 1px 6px #DCDCDC;
+				@include transform(rotate(-45deg));
 				@include transition (all .6s linear);
 				&:hover{
 					@include transform(rotate(0deg));
 					@include transition (all .6s linear);
 				}
+				@include media($device_1024) {
+					border-radius: 0px 46px 0px 46px;
+				}
 				@include media($device_768) {
+					border-radius: 0px 46px 0px 46px;
 					float: none;
 					margin: 0 auto;
 				}
 				@include media($device_480) {
+					border-radius: 0px 46px 0px 46px;
 					float: none;
 					margin: 0 auto;
 				}
 				@include media($device_320) {
+					border-radius: 0px 36px 0px 36px;
 					float: none;
 					margin: 0 auto;
 				}

@@ -700,20 +700,16 @@ body {
         word-wrap: break-word;
         font-size: 0.75em; } }
   .topWrapper .header .admin-pic {
-    background: url("../assets/kt_logo.jpg") no-repeat;
-    position: center;
     margin-top: -20px;
-    height: 150px;
-    width: 145px;
     float: left;
     margin-right: 25px;
-    border-radius: 86px;
-    box-shadow: -8px 0px 6px #DCDCDC;
-    -webkit-transform: rotate(-30deg);
-    -moz-transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
-    -o-transform: rotate(-30deg);
-    transform: rotate(-30deg);
+    border-radius: 0px 86px 0px 86px;
+    box-shadow: -8px 1px 6px #DCDCDC;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     -webkit-transition: all 0.6s linear;
     -moz-transition: all 0.6s linear;
     -ms-transition: all 0.6s linear;
@@ -730,16 +726,22 @@ body {
       -ms-transition: all 0.6s linear;
       -o-transition: all 0.6s linear;
       transition: all 0.6s linear; }
+    @media screen and (max-width: 1024px) {
+      .topWrapper .header .admin-pic {
+        border-radius: 0px 46px 0px 46px; } }
     @media screen and (max-width: 786px) {
       .topWrapper .header .admin-pic {
+        border-radius: 0px 46px 0px 46px;
         float: none;
         margin: 0 auto; } }
     @media screen and (max-width: 480px) {
       .topWrapper .header .admin-pic {
+        border-radius: 0px 46px 0px 46px;
         float: none;
         margin: 0 auto; } }
     @media screen and (max-width: 320px) {
       .topWrapper .header .admin-pic {
+        border-radius: 0px 36px 0px 36px;
         float: none;
         margin: 0 auto; } }
   .topWrapper .header .social-sharing {
@@ -887,18 +889,14 @@ body {
   box-shadow: 5px 5px #916691; }
   .topWrapper nav ul li a {
     color: #444444; }
-  @media screen and (max-width: 786px) {
-    .topWrapper nav ul li {
-      display: inline-block; } }
   @media screen and (max-width: 480px) {
     .topWrapper nav ul li {
-      margin: 10;
-      display: inline-block;
-      padding: 5px; } }
+      font-size: 0.75em;
+      padding: 4px; } }
   @media screen and (max-width: 320px) {
     .topWrapper nav ul li {
-      margin: 10px;
-      display: block; } }
+      font-size: 0.75em;
+      padding: 4px; } }
 
 /*
 *

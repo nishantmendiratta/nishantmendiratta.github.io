@@ -7,8 +7,13 @@
 			 <script>
         		document.write("<a href=\"");
         		document.write(posts[Math.floor(Math.random() * posts.length)]);
-        		document.write("\"><div class='admin-pic' title='Random Post'></div></a>");
+        		document.write("\">");
+        	</script>
+        			<img src="..//assets/kt_logo.png" class="admin-pic" height="18%" width="18%" />
+        	<script>
+        		document.write("</a>");
     		 </script>
+    		 
 			<a href="{{ site.url }}{{ site.baseurl }}"><span class="k">K</span>nowledge-<span class="k">T</span>hirsty ??</a>
 		</div><!--/title-->
 
