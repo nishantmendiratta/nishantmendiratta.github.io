@@ -568,12 +568,11 @@ body {
   clear: both;
   text-align: center;
   background: #F1F1F1;
-  padding: 25px;
-  margin-bottom: 10px;
-  border: 1px solid #DCDCDC; }
-  .post-social-buttons #share-button {
-    margin: 25px;
-    display: inline-block; }
+  border: 1px solid #DCDCDC;
+  margin-bottom: 5px;
+  padding: 10px; }
+  .post-social-buttons .fb-like {
+    padding: 5px; }
 
 .topWrapper:before, .topWrapper:after {
   content: "";
