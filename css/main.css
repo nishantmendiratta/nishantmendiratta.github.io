@@ -353,6 +353,7 @@ table {
   border-spacing: 0; }
 
 body {
+  background: url("../assets/bg.gif");
   color: #444444;
   margin: 0 auto;
   font: 80%/1.5em "calluna", Georgia, serif; }
@@ -361,12 +362,6 @@ body {
     text-decoration: none; }
   body span {
     color: #000; }
-  @media screen and (max-width: 480px) {
-    body {
-      background: #FFF; } }
-  @media screen and (max-width: 320px) {
-    body {
-      background: #FFF; } }
 
 .random a {
   font-size: 2em;
@@ -809,6 +804,8 @@ body {
 
 .bottomWrapper {
   clear: both;
+  background: #F1F1F1;
+  border-top: 2px double #DCDCDC;
   margin-top: 5px;
   text-align: center;
   font-size: 0.75em; }

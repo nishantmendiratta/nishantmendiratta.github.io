@@ -1,4 +1,5 @@
 body{
+background: url("../assets/bg.gif");
 color: #444444; 
 margin: 0 auto;
 font : 80%/1.5em "calluna", Georgia, serif;
@@ -12,10 +13,8 @@ font : 80%/1.5em "calluna", Georgia, serif;
 		@include media($device_768) {
 				}
 		@include media($device_480) {
-					background: #FFF;
 				}
 		@include media($device_320) {
-					background: #FFF;
 				}
 }
 

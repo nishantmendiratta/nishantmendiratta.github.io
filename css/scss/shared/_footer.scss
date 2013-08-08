@@ -1,6 +1,8 @@
 .bottomWrapper{
 @include zen-clear(both);
 @include zen-grid-container;
+background: #F1F1F1;
+border-top: 2px double #DCDCDC;
 margin-top: 5px;
 text-align: center;
 font-size: em(12);
