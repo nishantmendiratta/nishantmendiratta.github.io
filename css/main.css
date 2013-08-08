@@ -564,6 +564,17 @@ body {
   background: #FFF;
   border: 2px solid #DCDCDC; }
 
+.post-social-buttons {
+  clear: both;
+  text-align: center;
+  background: #F1F1F1;
+  padding: 25px;
+  margin-bottom: 10px;
+  border: 1px solid #DCDCDC; }
+  .post-social-buttons #share-button {
+    margin: 25px;
+    display: inline-block; }
+
 .topWrapper:before, .topWrapper:after {
   content: "";
   display: table; }
