@@ -3,7 +3,7 @@ background: url("../assets/bg.gif");
 color: #444444; 
 margin: 0 auto;
 font : 80%/1.5em "calluna", Georgia, serif;
-		a{
+		a{ 
 			 color: #000;
 			 text-decoration: none;
 		}
@@ -159,8 +159,25 @@ font : 80%/1.5em "calluna", Georgia, serif;
 		float: right;
 	}
 	.post-image{
-		margin-right:10px;
-		border:1px solid #DCDCDC;
+		margin-right: 10px;
+		border: 1px solid #DCDCDC;
+		width: 10%;
+		height: 10%; 
+	}
+	.post-img{
+		float: right;
+		border: 1px solid #DCDCDC;
+		height: 15%;
+		width: 15%;
+	}
+	.post-img-temp{
+		float:left;
+		margin:10px;
+		height: 15%;
+		width: 25%;
+	}
+	.post-footer{
+		clear:both;
 	}
 }
 

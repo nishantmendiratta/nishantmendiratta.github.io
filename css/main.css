@@ -538,7 +538,21 @@ body {
     float: right; }
   .post-text .post-image {
     margin-right: 10px;
-    border: 1px solid #DCDCDC; }
+    border: 1px solid #DCDCDC;
+    width: 10%;
+    height: 10%; }
+  .post-text .post-img {
+    float: right;
+    border: 1px solid #DCDCDC;
+    height: 15%;
+    width: 15%; }
+  .post-text .post-img-temp {
+    float: left;
+    margin: 10px;
+    height: 15%;
+    width: 25%; }
+  .post-text .post-footer {
+    clear: both; }
 
 .work-title {
   clear: both;
