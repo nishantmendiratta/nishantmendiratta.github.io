@@ -722,10 +722,7 @@ body {
         font-size: 0.75em; } }
   .topWrapper .header .admin-pic {
     margin-top: -20px;
-    float: left;
     margin-right: 25px;
-    border-radius: 0px 86px 0px 86px;
-    box-shadow: -8px 1px 6px #DCDCDC;
     -webkit-transition: all 0.6s linear;
     -moz-transition: all 0.6s linear;
     -ms-transition: all 0.6s linear;
@@ -736,41 +733,22 @@ body {
       -moz-transition: all 0.6s linear;
       -ms-transition: all 0.6s linear;
       -o-transition: all 0.6s linear;
-      transition: all 0.6s linear;
-      border-radius: 86px 0px 86px 0px;
-      box-shadow: 6px 1px 6px #DCDCDC; }
-      @media screen and (max-width: 1024px) {
-        .topWrapper .header .admin-pic:hover {
-          border-radius: 0px 46px 0px 46px; } }
-      @media screen and (max-width: 786px) {
-        .topWrapper .header .admin-pic:hover {
-          border-radius: 46px 0px 46px 0px; } }
-      @media screen and (max-width: 480px) {
-        .topWrapper .header .admin-pic:hover {
-          border-radius: 46px 0px 46px 0px; } }
-      @media screen and (max-width: 320px) {
-        .topWrapper .header .admin-pic:hover {
-          border-radius: 26px 0px 26px 0px; } }
-    @media screen and (max-width: 1024px) {
-      .topWrapper .header .admin-pic {
-        border-radius: 0px 46px 0px 46px; } }
+      transition: all 0.6s linear; }
     @media screen and (max-width: 786px) {
       .topWrapper .header .admin-pic {
-        border-radius: 0px 46px 0px 46px;
         float: none;
         margin: 0 auto; } }
     @media screen and (max-width: 480px) {
       .topWrapper .header .admin-pic {
-        border-radius: 0px 46px 0px 46px;
         float: none;
         margin: 0 auto; } }
     @media screen and (max-width: 320px) {
       .topWrapper .header .admin-pic {
-        border-radius: 0px 26px 0px 26px;
         float: none;
         margin: 0 auto; } }
   .topWrapper .header .social-sharing {
-    margin: 10px; }
+    margin: 10px;
+    float: right; }
     @media screen and (max-width: 786px) {
       .topWrapper .header .social-sharing {
         clear: both;

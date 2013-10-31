@@ -58,49 +58,37 @@
 		}
 		.admin-pic{
 				margin-top: -20px;
-				float: left;
 				margin-right: 25px;
-				border-radius: 0px 86px 0px 86px;
-  				box-shadow: -8px 1px 6px #DCDCDC;
 				@include transition (all .6s linear);
 				&:hover{
 					@include transition (all .6s linear);
-					border-radius: 86px 0px  86px 0px ;
-					box-shadow: 6px 1px 6px #DCDCDC;
 					@include media($device_1024) {
-					border-radius: 0px 46px 0px 46px;
 					}
 					@include media($device_768) {
-						border-radius: 46px 0px  46px 0px ;
 					}
 					@include media($device_480) {
-						border-radius: 46px 0px  46px 0px ;
 					}
 					@include media($device_320) {
-						border-radius: 26px 0px  26px 0px ;
 					}
 				}
 				@include media($device_1024) {
-					border-radius: 0px 46px 0px 46px;
 				}
 				@include media($device_768) {
-					border-radius: 0px 46px 0px 46px;
 					float: none;
 					margin: 0 auto;
 				}
 				@include media($device_480) {
-					border-radius: 0px 46px 0px 46px;
 					float: none;
 					margin: 0 auto;
 				}
 				@include media($device_320) {
-					border-radius: 0px 26px 0px 26px;
 					float: none;
 					margin: 0 auto;
 				}
 		}
 		.social-sharing{
 			margin: 10px;
+			float: right;
 				@include media($device_768) {
 					@include zen-clear(both);
 					@include zen-grid-item(12,1);
