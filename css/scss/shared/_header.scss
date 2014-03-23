@@ -1,5 +1,13 @@
 .topWrapper{
 	@include zen-grid-container;
+	.google-adsense{
+			@include zen-grid-item(6.8,3.2); 
+			text-align: center;
+			border-top : 2px solid #f9b512;
+			border-radius: 24px 24px 24px 24px ;
+		.adsbygoogle{
+		}
+	}
 	.header{
 		@include zen-grid-item(8,2.6); 
 		float: none;
