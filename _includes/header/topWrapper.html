@@ -3,47 +3,52 @@
   <div class="header">
 	  
 	  <div class="header_headings">
+
+	  	<div class="social-sharing">
+			<a href="https://twitter.com/MrMendiratta" class="" data-show-count="false">@MrMendiratta</a>
+		</div><!--social-sharing-->
+
 		<div class="title">
 			 <script>
-        		document.write("<a href=\"");
+        		document.write("<a id='random_href' href=\"");
         		document.write(posts[Math.floor(Math.random() * posts.length)]);
         		document.write("\">");
         	</script>
-        	<br />
-        			<img src="..//assets/mrmendiratta.png" width="100%" class="admin-pic" alt="Random Post"/>
-        	<br />
+				<div>&laquo;&reg;&raquo;</div>
+					<!--<img src="..//assets/mrmendiratta.png" width="100%" class="admin-pic" alt="Random Post"/>-->        	
         	<script>
         		document.write("</a>");
     		 </script>
     		 
-		</div><!--/title-->
+			<span><a href="{{ site.url }}{{ site.baseurl }}/about">About</a></span>
+			<span><a href="{{ site.url }}{{ site.baseurl }}/work">Work</a></span>
+			<span><a href="{{ site.url }}{{ site.baseurl }}/contact">Contact</a></span>
+			<span><a href="{{ site.url }}{{ site.baseurl }}/quotes">Quotes</a></span>
 
-		<div class="social-sharing">
-			<a href="https://twitter.com/MrMendiratta" class="twitter-follow-button" data-show-count="false">Follow @MrMendiratta</a>
-		</div><!--social-sharing-->
+		</div><!--/title-->
 
 	  </div> <!--/header_headings-->
 
-	  <nav role="navigation">
+	  <!--<div class="navigation" role="navigation">
 	
-		  <ul>
-			<li><a href="{{ site.url }}{{ site.baseurl }}">Home</a></li>
-			<li><a href="{{ site.url }}{{ site.baseurl }}/about">About</a></li>
-			<li><a href="{{ site.url }}{{ site.baseurl }}/work">Work</a></li>
-			<li><a href="{{ site.url }}{{ site.baseurl }}/contact">Contact</a></li>
-			<li><a href="{{ site.url }}{{ site.baseurl }}/quotes">Quotes</a></li>
-		  </ul>
+			<span><a href="{{ site.url }}{{ site.baseurl }}">Home</a></span>
+			<span><a href="{{ site.url }}{{ site.baseurl }}/about">About</a></span>
+			<span><a href="{{ site.url }}{{ site.baseurl }}/work">Work</a></span>
+			<span><a href="{{ site.url }}{{ site.baseurl }}/contact">Contact</a></span>
+			<span><a href="{{ site.url }}{{ site.baseurl }}/quotes">Quotes</a></span>
 
-	  </nav><!--/navigation-->
+	  </div>--><!--/navigation-->
 
   </div> <!--/header-->
 
   	
   	<!--adsense-->
-  	<div class="google-adsense">
+  	<!--<div class="google-adsense">
   	<div align="center">
   	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  	-->
 	<!-- Banner -->
+	<!--
 	<ins class="adsbygoogle"
 	     style="display:inline-block;width:728px;height:90px"
 	     data-ad-client="ca-pub-8598466518107172"
@@ -53,6 +58,7 @@
 	</script>
 	</div>
 	</div>
+  	-->
   	<!--/adsense-->
   	
 </div> <!--/topWrapper-->

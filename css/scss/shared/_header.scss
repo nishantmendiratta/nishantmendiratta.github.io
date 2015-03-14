@@ -1,14 +1,14 @@
 .topWrapper{
 	@include zen-grid-container;
+	margin-bottom: em(10);
 	.google-adsense{
 			@include zen-grid-item(6.8,3.2); 
 			text-align: center;
-			border-top : 2px solid #f9b512;
-			border-radius: 24px 24px 24px 24px ;
 		.adsbygoogle{
 		}
 	}
 	.header{
+		text-align: center;
 		@include zen-grid-item(8,2.6); 
 		float: none;
 				@include media($device_768) {
@@ -20,18 +20,31 @@
 					@include zen-grid-item(12,1); 
 				}
 		.title{
-			padding-top: 20px; 
-			margin: 10px;
-			font-size: em(20);
-			color: #FFEB95;
-			text-shadow:2px 2px #F1F1F1;
-			a{
-					font-size: em(20);
-					color: #000;
-					text-shadow:2px 2px #F1F1F1;
+			display: inline-block;
+			span{
+				display: inline-block;
+				@include media($device_768) {
+					display: inline-block;
+				}
+				@include media($device_480) {
+					display: inline-block;
+				}
+				@include media($device_320) {
+					display: inline-block;
+				}
+			}
+			a{	
+				display: inline-block;
+				padding: 10px;
+				font-size: em(22);
+				color: #0F7337;
+				border-radius: 50%;
+			    -webkit-transition: -webkit-transform .8s ease-in-out;
+			    transition: transform .8s ease-in-out;
 					@include media($device_768) {
 						@include zen-grid-item(12,1);
 						margin: 10px;
+						display: inline-block;
 					}
 					@include media($device_480) {
 						@include zen-clear(both);
@@ -39,6 +52,7 @@
 						padding: 0px;
 						margin: 0 auto;
 						font-size: em(18);
+						display: inline-block;
 					}
 					@include media($device_320) {
 						@include zen-clear(both);
@@ -46,11 +60,34 @@
 						padding: 0px;
 						margin: 0 auto;
 						font-size: em(18);
+						display: inline-block;
 					}
    			}
+   			#random_href{
+   				font-size: em(28);
+				@include media($device_768) {
+					display: inline-block;
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+
+				@include media($device_480) {
+					display: inline-block;
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+
+				@include media($device_320) {
+					display: inline-block;
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+   			}
+   			#random_href:hover{
+   				-webkit-transform: rotate(360deg);
+  				transform: rotate(360deg);
+   			}
    			.k{
-   				font-size: em(22);
-   				color: #480049;
    			}
    				@include media($device_480) {
 					@include zen-clear(both);
@@ -65,8 +102,6 @@
 				}
 		}
 		.admin-pic{
-				margin-top: -20px;
-				margin-right: 25px;
 				@include transition (all .6s linear);
 				&:hover{
 					@include transition (all .6s linear);
@@ -94,22 +129,35 @@
 					margin: 0 auto;
 				}
 		}
+		.social-sharing:before,.social-sharing:after{
+			//content: '';
+			//color:#B40E0E;
+		}
 		.social-sharing{
-			margin: 10px;
-			float: right;
+			width:100%; text-align:center; border-bottom: 1px solid #B40E0E; line-height:0.1em; margin:10px 0 20px;
+			padding: 10px;
+			font-size: em(52);
+			//border-bottom: 1px solid #B40E0E;
+				a{
+					background:#fff; padding:0 10px; 
+					color: #B40E0E !important;
+				}
 				@include media($device_768) {
 					@include zen-clear(both);
 					@include zen-grid-item(12,1);
+					font-size: em(42);
 				}
 				@include media($device_480) {
 					@include zen-clear(both);
 					margin: 0 auto;
 					@include zen-grid-item(12,1);
+					font-size: em(32);
 				}
 				@include media($device_320) {
 					@include zen-clear(both);
 					margin: 0 auto;
 					@include zen-grid-item(12,1);
+					font-size: em(32);
 				}
 		}
 	}
