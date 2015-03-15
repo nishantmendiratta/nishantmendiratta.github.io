@@ -33,7 +33,8 @@
 					display: inline-block;
 				}
 			}
-			a{	
+			a{
+				font-variant: small-caps;	
 				display: inline-block;
 				padding: 10px;
 				font-size: em(22);
@@ -134,9 +135,14 @@
 			//color:#B40E0E;
 		}
 		.social-sharing{
-			width:100%; text-align:center; border-bottom: 1px solid #B40E0E; line-height:0.1em; margin:10px 0 20px;
+			width:100%; 
+			text-align:center; 
+			border-bottom: 1px solid #B40E0E; 
+			line-height:0.1em; 
+			margin:10px 0 20px;
 			padding: 10px;
 			font-size: em(52);
+			font-family: Helvetica, Arial, Sans-Serif;
 			//border-bottom: 1px solid #B40E0E;
 				a{
 					background:#fff; padding:0 10px; 

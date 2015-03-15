@@ -353,7 +353,8 @@ table {
   border-spacing: 0; }
 
 html {
-  border-top: 6px solid #000; }
+  border-top: 6px solid #000;
+  font-family: Helvetica, Arial, Sans-Serif; }
 
 body {
   color: #FFF;
@@ -381,7 +382,7 @@ body {
   .banner .c {
     color: #000;
     text-shadow: 1px 1px #FFF;
-    font-family: cursive; }
+    font-family: monospace; }
   @media screen and (max-width: 480px) {
     .banner {
       font-size: 0.875em; } }
@@ -474,7 +475,8 @@ body {
   margin-bottom: 15px;
   border-radius: 2px 2px 2px 2px;
   box-shadow: -6px 0px 1px #4D4F44;
-  font-family: cursive; }
+  font-family: monospace;
+  font-size: 1.125em; }
   .special a, .work-title a, .post-title a {
     color: #4D4F44; }
 
@@ -504,6 +506,8 @@ body {
     font-style: normal;
     font-weight: 200;
     color: #000; }
+  .content-text .name {
+    color: #4D4F44; }
 
 .recent-blog-posts {
   clear: both;
@@ -516,7 +520,7 @@ body {
   color: #4D4F44;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #DADADA; }
+  border-bottom: 1px dashed #DADADA; }
   .post-text a {
     color: #40908F;
     padding-bottom: 5px;
@@ -647,6 +651,7 @@ body {
           .topWrapper .header .title span {
             display: inline-block; } }
       .topWrapper .header .title a {
+        font-variant: small-caps;
         display: inline-block;
         padding: 10px;
         font-size: 1.375em;
@@ -786,7 +791,8 @@ body {
       line-height: 0.1em;
       margin: 10px 0 20px;
       padding: 10px;
-      font-size: 3.25em; }
+      font-size: 3.25em;
+      font-family: Helvetica, Arial, Sans-Serif; }
       .topWrapper .header .social-sharing a {
         background: #fff;
         padding: 0 10px;

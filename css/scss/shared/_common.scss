@@ -1,5 +1,6 @@
 html{
 	border-top: 6px solid #000;
+	font-family: Helvetica, Arial, Sans-Serif;
 }
 
 body{
@@ -38,7 +39,7 @@ font : 80%/1.5em "calluna", Georgia, serif;
 		.c{
 			color: #000;
 			text-shadow:1px 1px #FFF;
-			font-family: cursive;
+			font-family: monospace;
 		}
 				@include media($device_768) {
 
@@ -86,7 +87,8 @@ font : 80%/1.5em "calluna", Georgia, serif;
 	margin-bottom: 15px;
 	border-radius: 2px 2px 2px 2px;
 	box-shadow: -6px 0px 1px #4D4F44;
-	font-family: cursive;
+	font-family: monospace;
+	font-size: em(18);
 	a{
 		color: #4D4F44;
 	}
@@ -123,6 +125,9 @@ font : 80%/1.5em "calluna", Georgia, serif;
 		font-weight: 200;
 		color: #000;
 	}
+	.name{
+		color: #4D4F44;
+	}
 }
 
 .recent-blog-posts {
@@ -138,7 +143,7 @@ font : 80%/1.5em "calluna", Georgia, serif;
 	color: #4D4F44;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	border-bottom: 1px solid #DADADA;
+	border-bottom: 1px dashed #DADADA;
 	a{	
 		color: #40908F;
 		padding-bottom: 5px;
