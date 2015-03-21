@@ -1,0 +1,116 @@
+---
+layout: default
+title: Hello Node.js!
+excerpt: This example is about as plain as it can get. It prints the words "Hello World" to the terminal and HTML page.
+categories:
+- blog
+
+image: 
+  src: ..//assets/hello-node/node.png
+  alt: 
+
+tags:
+- nishant
+- mendiratta
+- developer
+- node 
+- javascript
+- nodejs
+- hello
+- world
+- learn
+- educate
+- contribute
+- git
+- github
+
+status: publish
+type: post
+published: true
+
+meta:
+  keywords: nishant,mendiratta,developer,node,application,javascript,js,hello,world,learn,educate,contribute,git,github,nodejs
+  readmore: Read More about Nishant's Blog.
+---
+<style type="text/css">
+	pre{
+		background: #3F3F3F;
+		color: #54DA2E;
+		padding: 10px;
+	}
+	#code_comment{
+		color: #FFF;
+	}
+</style>
+<p>
+<div class="post-title">
+	Hello Node.js!
+</div>
+</p>
+
+<div class="post-text">
+
+<p>
+		<img src="..//assets/loader.gif" data-src="..//assets/hello-node/node.png" class="post-img">
+</p>
+
+<p>
+	<strong>Prerequisite: JavaScript knowledge, I'd say you need to at least understand the server-client model and how the HTTP protocol works. that should be enough to get you started if you already know JS. Node installation steps can be found here - <a href='https://nodejs.org/'>https://nodejs.org/</a></strong>
+</p>
+<p>
+	Simple hello world program as a first example has become the standard in the programming literature. This article will go through hello world example for both terminal and an http server.
+</p>
+<p>
+	Then we'll shift gears up and go through real examples that teaches you enough to write your own web application using node.js. Comments in code explain how it works and text around it explains how it works.
+</p>
+<p>
+	<strong>Hello Terminal</strong>
+	<p>Create a javascript file like hello-terminal.js and add following line of code. You can run it with command node hello-terminal.js</p>
+<pre>
+<span id="code_comment">//Call the console.log function.</span>
+	<code>console.log("Hello Terminal");</code>
+</pre>
+	
+	<p></p>
+</p>
+
+<p>
+	<strong>Hello HTTP</strong>
+	<p>Our next example will let you create a simple HTTP server that responds to every request with the plain text message "Hello HTTP".</p>
+
+<pre>
+<span id="code_comment">//Load the http module to create an http server</span>
+<code>var http = require("http");
+
+<span id="code_comment">//Configure our HTTP server to respond with Hello HTTP to all requests.</span>
+http.createServer(function (req,res) {
+	if (req.url=="/") {
+		res.writeHead(200,{"Content-type":"text/plain"});
+		res.end("Hello HTTP");
+	};
+	<span id="code_comment">//Listen on port 5000, IP defaults to 127.0.0.1</span>
+}).listen(5000,"127.0.0.1");
+
+<span id="code_comment">//Put a friendly message on the terminal</span>
+console.log("Server running at http://127.0.0.1:5000/");
+</code>
+</pre>
+	
+	<p>Create a javascript file like hello-http.js and add your code. You can run it with command node hello-http.js</p>
+</p>
+
+<p class="post-footer">  
+	That's it for now, this article was going to explain more, but it seems it got lost and fell through the cracks. Hopefully this will help you get started working with node.js, it's a blast!
+</p>
+
+<p>
+</p>
+
+
+
+<p class="post-footer">
+	As always, if you have any questions, feedback or requests for future tutorials, please do leave a comment.Visit everyday and learn new things..
+</p>
+</div>
+
+{% include components/comment-box/fb-comment.html %}
