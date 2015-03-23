@@ -1,0 +1,170 @@
+---
+layout: default
+title: Handling one-off events with callbacks (Node.js)
+excerpt: To demonstrate the use of callbacks in an application and a basic HTML template to render the blog titles.
+categories:
+- blog
+
+image: 
+  src: ..//assets/hello-node/call-back.jpg
+  alt: 
+
+tags:
+- nishant
+- mendiratta
+- developer
+- node 
+- javascript
+- nodejs
+- callback
+- HTML
+- learn
+- educate
+- contribute
+- git
+- github
+- render
+- demonstrate
+
+status: publish
+type: post
+published: true
+
+meta:
+  keywords: nishant,mendiratta,developer,node,application,javascript,js,callback,HTML,learn,educate,contribute,git,github,nodejs,demonstrate
+  readmore: Read More about Nishant's Blog.
+---
+<style type="text/css">
+	pre{
+		background: #3F3F3F;
+		color: #54DA2E;
+		padding: 10px;
+	}
+	#code_comment{
+		color: #FFF;
+	}
+</style>
+<p>
+<div class="post-title">
+	Handling one-off events with callbacks (Node.js)
+</div>
+</p>
+
+<div class="post-text">
+
+<p>
+		<img src="..//assets/loader.gif" data-src="..//assets/hello-node/call-back.jpg" class="post-img">
+</p>
+
+<p>
+	<strong>Prerequisite: JavaScript knowledge, I'd say you need to at least understand the server-client model and how the HTTP protocol works. that should be enough to get you started if you already know JS. Node installation steps can be found here - <a href='https://nodejs.org/'>https://nodejs.org/</a></strong>
+</p>
+<p>
+	To demonstrate the use of callback let's make a simple HTTP server that will perform following tasks
+	<ul>
+		<li>Asynchronously pulling the titles stored as a JSON file</li>
+		<li>Pull basic HTML template, Asynchronously</li>
+		<li>Assembles an HTML page containing titles</li>
+		<li>Render this HTML page.</li>
+	</ul>
+</p>
+<p>
+	TODO : An HTML response from a web server that pulls titles from a JSON file and returns results as a web page.
+</p>
+<p>
+	<strong>titles.json</strong>
+	<p>Create a JSON file, formatted as an array of strings containing titles of posts.</p>
+<pre>
+<span id="code_comment">//A list of post titles.</span>
+<code>[
+"I need attention! GIVE ME SOME ATTENTION!",
+"Is this a circus? Why is there a monkey wearing a suit",
+"Quintessential Fairytale Weddings for under $1,000"
+]</code>
+</pre>
+
+</p>
+
+<p>
+	<strong>template.html</strong>
+	<p>The HTML template file will include just a basic structure to insert the titles of the blog posts</p>
+<pre>
+<code>&lt!doctype html&gt
+&lthtml&gt
+&lthead&gt&lt/head&gt
+&ltbody&gt
+	&lth1&gtLatest Posts&lt/h1&gt
+	<span id="code_comment">//% will be replaced with title data</span>
+	&ltul&gt&ltli&gt%&lt/li&gt&lt/ul&gt
+&lt/body&gt
+&lt/html&gt</code>
+</pre>
+
+</p>
+
+
+<p>
+	<strong>blog_recent.js</strong>
+	<p>Following code will pull JSON file and render the web page.</p>
+<pre>
+<code>
+<span id="code_comment">//Load http,fs modules to create an http server and read files</span>
+var http = require("http");
+var fs = require("fs");
+
+<span id="code_comment">//Create HTTP server and use callback to define response logic</span>
+http.createServer(function (request, response) {
+	if (request.url!="/") {
+		response.writeHead(404,{"Content-type":"text/plain"});
+		response.end("Page not found!");
+	}else{
+		<span id="code_comment">//Read JSON file and use callback to define what to do with its contents</span>
+		fs.readFile("titles.json",function (error, data) {
+
+			<span id="code_comment">//If error occurs, log error and return "Server Error" to client</span>
+			if (error) {
+				response.writeHead(500,{"Content-type":"text/plain"});
+				response.end("Server error :" + error);
+			}else{
+			  	<span id="code_comment">//Parse data from JSON text</span>
+				var titles = JSON.parse(data.toString());
+
+				<span id="code_comment">//Read HTML template and use callback when it’s loaded</span>
+				fs.readFile("template.html",function (error, data) {
+					if (error) {
+						response.writeHead(500,{"Content-type":"text/plain"});
+						response.end("Server error :" + error);
+					}else{
+						var template = data.toString();
+
+						<span id="code_comment">//Assemble HTML page showing blog titles</span>
+						var html = template.replace("%",titles.join("&lt/li&gt&ltli&gt"));
+
+						<span id="code_comment">//Send HTML page to user</span>
+						response.end(html);
+					}
+				});
+			}
+		});
+	}
+<span id="code_comment">//Listen on port 5000, IP defaults to 127.0.0.1</span>
+}).listen(5000,"127.0.0.1");
+
+<span id="code_comment">//Put a friendly message on the terminal</span>
+console.log("Listening to http://127.0.0.1:5000");
+</code>
+</pre>
+	
+	<p>Now as you can see above code has three levels of callbacks, the more cluttered your code looks, and the harder it is to refactor and test.  By creating named functions that handle the individual levels of callback nesting, you can express the same logic in a way that requires more lines of code but it will be easier to maintain and test. Next post will give an example of reducing nesting by creating named functions.</p>
+</p>
+
+<p class="post-footer">  
+	That's it for now, Hopefully this will help you get started working with node.js!
+</p>
+
+<p class="post-footer">
+	As always, if you have any questions, feedback or requests for future tutorials, please do leave a comment. Visit everyday and learn new things..
+</p>
+</div>
+
+{% include components/comment-box/fb-comment.html %}
