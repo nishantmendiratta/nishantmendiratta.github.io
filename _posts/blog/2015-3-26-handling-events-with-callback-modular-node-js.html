@@ -1,0 +1,136 @@
+---
+layout: default
+title:  Reducing nesting of events and callbacks by creating intermediary functions(Node.js)
+excerpt: An example of reducing nesting by creating modules.
+categories:
+- blog
+
+image: 
+  src:
+  alt: 
+
+tags:
+- nishant
+- mendiratta
+- developer
+- node 
+- javascript
+- nodejs
+- callback
+- HTML
+- learn
+- educate
+- contribute
+- git
+- github
+- render
+- demonstrate
+- functions
+
+status: publish
+type: post
+published: true
+
+meta:
+  keywords: nishant,mendiratta,developer,node,application,javascript,js,callback,HTML,learn,educate,contribute,git,github,nodejs,demonstrate,functions
+  readmore: Read More about Nishant's Blog.
+---
+<style type="text/css">
+	pre{
+		background: #3F3F3F;
+		color: #54DA2E;
+		padding: 10px;
+	}
+	#code_comment{
+		color: #FFF;
+	}
+</style>
+<p>
+<div class="post-title">
+	Handling one-off events with callbacks, Reduced nesting by creating intermediary functions (Node.js)
+</div>
+</p>
+
+<div class="post-text">
+<p>
+	<strong>Prerequisite: JavaScript knowledge, I'd say you need to at least understand the server-client model and how the HTTP protocol works. that should be enough to get you started if you already know JS. Node installation steps can be found here - <a href='https://nodejs.org/'>https://nodejs.org/</a></strong>
+</p>
+<p>
+	This example is based on my last post - <a href="http://nishantmendiratta.github.io/handling-events-with-callback-node-js/">Handling one-off events with nested callbacks</a>
+</p>
+
+<p>We have added functions in js file only.</p>
+<p>
+	<strong>blog_recent.js</strong>
+	<p>Following code will pull JSON file and render the web page.</p>
+<pre>
+<code><span id="code_comment">//Load http,fs modules to create an http server and read files</span>
+var http = require("http");
+var fs = require("fs");
+
+<span id="code_comment">//Client request initially comes in here</span>
+http.createServer(function (request,response) {
+	
+	if (request.url!="/") {
+		return hadError("Page not found!",response);
+	}
+
+	<span id="code_comment">//Control is passed to getTitles</span>
+	getTitles(response);
+	
+}).listen(4000,"127.0.0.1");
+
+<span id="code_comment">//Put a friendly message on the terminal</span>
+console.log("Listening to 127.0.0.1:4000");
+
+<span id="code_comment">//getTitles pulls titles and passes control to getTemplate</span>
+function getTitles (response) {
+
+	fs.readFile("titles.json",function (error,data) {
+	<span id="code_comment">//Instead of creating an else branch, you return,</span>
+	<span id="code_comment">//because if an error occurred you don’t need to continue executing this function.</span>
+		if (error) 
+			return hadError(error,response);
+		
+		getTemplate(data,response);
+	});
+}
+<span id="code_comment">//getTemplate reads template file and passes control to formatHtml</span>
+function getTemplate (data,response) {
+	
+	var titles = JSON.parse(data.toString());
+	fs.readFile("template.html",function (error,data) {
+		
+		if (error) 
+			return hadError(error,response);
+
+		formatHtml(titles,data.toString(),response);
+	});
+}
+
+<span id="code_comment">//formatHtml takes titles and template, and renders a response back to client</span>
+function formatHtml (titles,template,response) {
+		var html = template.replace("%",titles.join("&lt/li&gt&ltli&gt"));
+		response.writeHead(200,{"Content-type":"text-html"});
+		response.end(html);
+}
+
+<span id="code_comment">//If an error occurs along the way, hadError logs error to console and responds to client with "Server Error"</span>
+function hadError (error,response) {
+	response.end(error);
+}
+</code>
+</pre>
+	
+	<p>
+		Now as you have learnt how to use callbacks to handle one-off events, let's move on to organizing events using event emitters
+	</p>
+</p>
+
+<p class="post-footer">
+	If you have any questions, feedback or requests for future tutorials, please do leave a comment. 
+	Visit everyday and learn new things..
+</p>
+</div>
+
+{% include components/comment-box/fb-comment.html %}
